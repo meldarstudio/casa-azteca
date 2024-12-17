@@ -13,8 +13,7 @@ export const defaultMeta = {
 };
 
 export const socialLinks = {
-  DoorDash:
-    "https://www.foodbooking.com/ordering/restaurant/menu?company_uid=1e49066a-c69e-4685-b7da-e8cf3be95fd5&restaurant_uid=ff1b9f8b-bd36-450c-8e03-c92a037728a0",
+  DoorDash: "https://www.doordash.com/store/casa-azteca-barre-32244477/",
 };
 
 export const navLinks = [
