@@ -1,0 +1,48 @@
+---
+import { navLinks } from "~/constants";
+---
+
+<header
+  class="sticky-animation fixed top-0 z-20 w-full px-4 py-6 text-white xl:px-0"
+  class:list={{
+    "relative bg-stone-900": Astro.url.pathname !== "/",
+  }}
+>
+  <div class="mx-auto flex max-w-6xl items-center justify-between">
+    <a href="/" class="flex flex-col items-center"
+      ><span class="font-serif text-2xl sm:text-7xl">Casa Azteca</span>
+      <span
+        class="w-full bg-red-700 px-1 text-center font-serif text-xs uppercase tracking-wider text-white sm:text-base"
+        >Mexican Restaurant</span
+      ></a
+    >
+    <nav
+      class="flex flex-col items-end gap-1 text-sm uppercase tracking-wide sm:gap-0.5 sm:text-base"
+    >
+      {
+        navLinks.map((link) => (
+          <a href={link.href} class="hover:underline">
+            {link.name}
+          </a>
+        ))
+      }
+      <a
+        href="https://www.foodbooking.com/api/fb/_q_jndx"
+        class="rounded bg-amber-700 px-1 hover:underline">Order Now</a
+      >
+    </nav>
+  </div>
+</header>
+<style>
+  .sticky-animation {
+    animation: blur linear both;
+    animation-timeline: scroll();
+    animation-range: 0 200px;
+  }
+
+  @keyframes blur {
+    to {
+      @apply bg-stone-900 backdrop-blur;
+    }
+  }
+</style>
