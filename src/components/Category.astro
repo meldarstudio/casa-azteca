@@ -16,13 +16,13 @@ const collection = await getCollection(slug);
   <ul class="grid grid-cols-1 gap-4">
     {
       collection.map(({ data }) => (
-        <li class="flex flex-col gap-1 border-b pb-4 last:border-b-0 sm:last:border-b md:flex-row md:justify-between md:gap-0 md:border md:bg-white md:pb-0">
+        <li class="flex flex-col gap-1 border-b border-stone-200 pb-4 md:flex-row md:justify-between md:gap-0 md:border md:bg-white md:pb-0">
           {data.imgSrc && (
             <Picture
               src={data.imgSrc}
               alt={data.description}
               formats={["webp", "avif"]}
-              class="mb-2 object-cover md:m-0 md:h-full md:max-w-40 lg:max-w-56"
+              class="mb-2 object-cover md:m-0 md:h-full md:max-w-48 lg:max-w-60"
               width={data.imgSrc.width / 3}
               height={data.imgSrc.height / 3}
             />

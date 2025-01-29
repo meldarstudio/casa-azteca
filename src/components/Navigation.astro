@@ -5,19 +5,19 @@ import { navLinks, orderUrl } from "~/constants";
 <header
   class="sticky-animation fixed top-0 z-20 w-full px-4 py-6 text-white xl:px-0"
   class:list={{
-    "relative bg-stone-900": Astro.url.pathname !== "/",
+    "relative bg-stone-950": Astro.url.pathname !== "/",
   }}
 >
   <div class="mx-auto flex max-w-6xl items-center justify-between">
     <a href="/" class="flex flex-col items-center"
       ><span class="font-serif text-2xl sm:text-7xl">Casa Azteca</span>
       <span
-        class="w-full bg-red-700 px-1 text-center font-serif text-xs uppercase tracking-wider text-white sm:text-base"
+        class="w-full bg-green-800 px-1 text-center font-serif text-xs tracking-wider text-white uppercase sm:text-base"
         >Mexican Restaurant</span
       ></a
     >
     <nav
-      class="flex flex-col items-end gap-1 text-sm uppercase tracking-wide sm:gap-0.5 sm:text-base"
+      class="flex flex-col items-end gap-1 text-sm tracking-wide uppercase sm:gap-0.5 sm:text-base"
     >
       {
         navLinks.map((link) => (
@@ -26,7 +26,7 @@ import { navLinks, orderUrl } from "~/constants";
           </a>
         ))
       }
-      <a href={orderUrl} class="rounded bg-amber-700 px-1 hover:underline"
+      <a href={orderUrl} class="rounded-md bg-red-700 px-1 hover:underline"
         >Order Now</a
       >
     </nav>
@@ -41,7 +41,8 @@ import { navLinks, orderUrl } from "~/constants";
 
   @keyframes blur {
     to {
-      @apply bg-stone-900 backdrop-blur;
+      background-color: var(--color-stone-950);
+      backdrop-filter: blur(var(--blur-sm));
     }
   }
 </style>
