@@ -14,6 +14,7 @@ export const defaultMeta = {
 
 export const socialLinks = {
   DoorDash: "https://www.doordash.com/store/casa-azteca-barre-32244477/",
+  Facebook: "https://www.facebook.com/p/Casa-Azteca-Barre-VT-61570317904529/",
 };
 
 export const navLinks = [
