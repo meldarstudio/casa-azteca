@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
 @theme {
-  --color-wood-950: oklch(22.35% 0.04398 44.547);
+  --color-oak-950: oklch(0.2547 0.016 31.3);
+  --color-oak-300: oklch(0.7277 0.0355 73.05);
 }

@@ -4,7 +4,7 @@ import { Image } from "astro:assets";
 import logoImg from "~/assets/logo.webp";
 ---
 
-<footer class="bg-stone-900">
+<footer class="bg-oak-950">
   <div
     class="mx-auto grid max-w-6xl grid-cols-1 gap-6 px-4 py-12 sm:px-8 md:grid-cols-4"
   >
@@ -17,8 +17,8 @@ import logoImg from "~/assets/logo.webp";
       width={144}
     />
     <div>
-      <h3 class="font-semibold text-amber-400">Links</h3>
-      <ul class="mt-3 flex flex-col gap-2 text-stone-400">
+      <h3 class="font-semibold text-yellow-400">Links</h3>
+      <ul class="text-oak-300 mt-3 flex flex-col gap-2">
         {
           navLinks.map((link) => (
             <li>
@@ -31,8 +31,8 @@ import logoImg from "~/assets/logo.webp";
       </ul>
     </div>
     <div>
-      <h3 class="font-semibold text-amber-400">Socials</h3>
-      <ul class="mt-3 flex flex-col gap-2 text-stone-400">
+      <h3 class="font-semibold text-yellow-400">Socials</h3>
+      <ul class="text-oak-300 mt-3 flex flex-col gap-2">
         {
           Object.entries(socialLinks).map(([name, href]) => (
             <li>
@@ -44,25 +44,25 @@ import logoImg from "~/assets/logo.webp";
         }
       </ul>
     </div>
-    <address class="text-stone-400 not-italic">
-      <h3 class="mb-3 font-semibold text-amber-400">Address</h3>
+    <address class="text-oak-300 not-italic">
+      <h3 class="mb-3 font-semibold text-yellow-400">Address</h3>
       <a
         href="https://maps.app.goo.gl/KTEtRcKLEmQu9bcf7"
         target="_blank"
-        class="underline-offset-2 hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400/90"
+        class="underline-offset-2 hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400/90"
         aria-label="View El Dorado restaurant location on Google Maps"
       >
         1450 Barre-Montpelier Rd<br /> Barre, VT 05641
       </a><br />
-      <h3 class="mt-6 mb-3 font-semibold text-amber-400">Phone</h3>
+      <h3 class="mt-6 mb-3 font-semibold text-yellow-400">Phone</h3>
       <a
         href="tel:+18025054064"
-        class="underline-offset-2 hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400/90"
+        class="underline-offset-2 hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400/90"
         aria-label="Call El Dorado restaurant"
       >
         (802) 505-4064</a
       ><br />
-      <h3 class="mt-6 mb-3 font-semibold text-amber-400">Opening Hours</h3>
+      <h3 class="mt-6 mb-3 font-semibold text-yellow-400">Opening Hours</h3>
       <div role="table" aria-label="Restaurant opening hours">
         <div role="row">
           <span role="cell">Sunday - Thursday:</span>

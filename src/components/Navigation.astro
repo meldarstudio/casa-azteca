@@ -18,12 +18,18 @@ import { navLinks, orderUrl } from "~/constants";
         >Mexican Restaurant</span
       ></a
     >
-    <nav
+    <ul
       class="flex flex-col items-end gap-1 text-sm font-medium tracking-wide uppercase sm:gap-0.5 sm:text-base"
     >
-      {navLinks.map((link) => <a href={link.href}>{link.name}</a>)}
-      <a href={orderUrl} class="rounded bg-red-700 px-1">Order Now</a>
-    </nav>
+      {
+        navLinks.map((link) => (
+          <li>
+            <a href={link.href}>{link.name}</a>
+          </li>
+        ))
+      }
+      <li><a href={orderUrl} class="rounded bg-red-700 px-1">Order Now</a></li>
+    </ul>
   </div>
 </header>
 <style>
@@ -35,7 +41,11 @@ import { navLinks, orderUrl } from "~/constants";
 
   @keyframes blur {
     to {
-      background-color: var(--color-stone-900);
+      background-color: color-mix(
+        in oklab,
+        var(--color-stone-900) 90%,
+        transparent
+      );
       backdrop-filter: blur(var(--blur-sm));
     }
   }
