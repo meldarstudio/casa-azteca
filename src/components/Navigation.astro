@@ -5,7 +5,7 @@ import { navLinks, orderUrl } from "~/constants";
 <header
   class="sticky-animation fixed top-0 z-20 w-full text-white"
   class:list={{
-    "relative bg-stone-950": Astro.url.pathname !== "/",
+    "relative bg-stone-900": Astro.url.pathname !== "/",
   }}
 >
   <div
@@ -35,7 +35,7 @@ import { navLinks, orderUrl } from "~/constants";
 
   @keyframes blur {
     to {
-      background-color: var(--color-stone-950);
+      background-color: var(--color-stone-900);
       backdrop-filter: blur(var(--blur-sm));
     }
   }

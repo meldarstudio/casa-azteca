@@ -4,7 +4,7 @@ import { Image } from "astro:assets";
 import logoImg from "~/assets/logo.webp";
 ---
 
-<footer class="bg-zinc-950">
+<footer class="bg-stone-900">
   <div
     class="mx-auto grid max-w-6xl grid-cols-1 gap-6 px-4 py-12 sm:px-8 md:grid-cols-4"
   >
@@ -17,8 +17,8 @@ import logoImg from "~/assets/logo.webp";
       width={144}
     />
     <div>
-      <h2 class="font-semibold text-amber-400">Links</h2>
-      <ul class="mt-3 flex flex-col gap-2 text-zinc-300">
+      <h3 class="font-semibold text-amber-400">Links</h3>
+      <ul class="mt-3 flex flex-col gap-2 text-stone-400">
         {
           navLinks.map((link) => (
             <li>
@@ -31,8 +31,8 @@ import logoImg from "~/assets/logo.webp";
       </ul>
     </div>
     <div>
-      <h2 class="font-semibold text-amber-400">Socials</h2>
-      <ul class="mt-3 flex flex-col gap-2 text-zinc-300">
+      <h3 class="font-semibold text-amber-400">Socials</h3>
+      <ul class="mt-3 flex flex-col gap-2 text-stone-400">
         {
           Object.entries(socialLinks).map(([name, href]) => (
             <li>
@@ -44,7 +44,7 @@ import logoImg from "~/assets/logo.webp";
         }
       </ul>
     </div>
-    <address class="text-neutral-400 not-italic">
+    <address class="text-stone-400 not-italic">
       <h3 class="mb-3 font-semibold text-amber-400">Address</h3>
       <a
         href="https://maps.app.goo.gl/KTEtRcKLEmQu9bcf7"

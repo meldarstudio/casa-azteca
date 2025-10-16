@@ -69,23 +69,29 @@ const popularDishes = [
       {
         popularDishes.map((dish) => (
           <li class="relative overflow-hidden rounded-md transition-colors">
-            <a
-              class="absolute inset-0 bg-gradient-to-b from-transparent to-stone-900/50 opacity-0 transition-all hover:opacity-100"
-              href={dish.href}
-            >
-              <span class="absolute top-2 left-2 rounded-md bg-amber-400 px-2 py-1 text-sm font-medium">
-                {dish.title}
-              </span>
-              <p class="absolute bottom-2 left-2 p-2 text-white">
-                {dish.description}
-              </p>
-            </a>
-            <Image
-              src={dish.img.src}
-              alt={dish.img.alt}
-              layout="constrained"
-              sizes="(max-width: 768px) 100vw, (max-width: 1152px) 50vw, 576px"
-            />
+            <article>
+              <h3 class="sr-only">{dish.title}</h3>
+              <a
+                class="absolute inset-0 bg-gradient-to-b from-transparent to-stone-900/50 opacity-0 transition-all hover:opacity-100 focus:opacity-100 focus:outline-2 focus:outline-amber-400"
+                href={dish.href}
+              >
+                <span
+                  class="absolute top-2 left-2 rounded-md bg-amber-400 px-2 py-1 text-sm font-medium"
+                  aria-hidden="true"
+                >
+                  {dish.title}
+                </span>
+                <p class="absolute bottom-2 left-2 p-2 text-white">
+                  {dish.description}
+                </p>
+              </a>
+              <Image
+                src={dish.img.src}
+                alt={dish.img.alt}
+                layout="constrained"
+                sizes="(max-width: 768px) 100vw, (max-width: 1152px) 50vw, 576px"
+              />
+            </article>
           </li>
         ))
       }

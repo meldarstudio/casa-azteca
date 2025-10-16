@@ -73,6 +73,12 @@ const photos = Object.values(
         gallery: "#gallery",
         children: "a",
         pswpModule: () => import("photoswipe"),
+        // Enhanced keyboard navigation
+        escKey: true,
+        arrowKeys: true,
+        // Better accessibility
+        returnFocus: true,
+        trapFocus: true,
       });
       this.lightbox.init();
     };
