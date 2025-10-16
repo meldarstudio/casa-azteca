@@ -7,64 +7,66 @@ import { Image } from "astro:assets";
 
 const popularDishes = [
   {
-    title: "Fajitas",
+    title: "Sizzling Mexican Fajitas",
     href: "/menu#fajitas",
     description:
-      "Sizzling plate with your choice of meat, bell peppers, onions, and a side of rice, and tortillas",
+      "Authentic Mexican fajitas served sizzling hot with marinated chicken, steak, or shrimp, grilled bell peppers, onions, warm flour tortillas, Mexican rice, and fresh guacamole",
     img: {
       src: fajitas,
-      alt: "fajitas on a sizzling plate",
+      alt: "Sizzling Mexican fajitas with grilled chicken, bell peppers, and onions on cast iron plate",
     },
   },
   {
-    title: "Tacos",
+    title: "Authentic Street Tacos",
     href: "/menu#tacos",
     description:
-      "Three tacos with your choice of meat, topped with onions, cilantro, and a side of salsa",
+      "Traditional Mexican street tacos with soft corn tortillas, seasoned carnitas, carne asada, or pollo, topped with fresh onions, cilantro, and house-made salsa verde",
     img: {
       src: tacos,
-      alt: "three tacos in a plate",
+      alt: "Three authentic Mexican street tacos with carnitas, onions, and cilantro",
     },
   },
   {
-    title: "Burritos",
+    title: "Hand-Rolled Burritos",
     href: "/menu#burritos",
     description:
-      "A large flour tortilla filled with your choice of meat, rice, beans, lettuce, sour cream, shredded cheese, and pico de gallo",
+      "Oversized flour tortillas stuffed with seasoned meat, Mexican rice, refried beans, lettuce, cheese, sour cream, and fresh pico de gallo, grilled to golden perfection",
     img: {
       src: burritos,
-      alt: "One burrito in a plate",
+      alt: "Large Mexican burrito cut in half showing seasoned meat, rice, beans, and fresh toppings",
     },
   },
   {
-    title: "Desserts",
+    title: "Traditional Mexican Desserts",
     href: "/menu#desserts",
     description:
-      "Churros and flan to satisfy your sweet tooth after a delicious meal",
+      "House-made churros dusted with cinnamon sugar and served with rich chocolate sauce, plus creamy traditional flan with caramel - perfect endings to your Mexican feast",
     img: {
       src: desserts,
-      alt: "Churros with chocolate sauce and a flan in a plate",
+      alt: "Traditional Mexican desserts featuring cinnamon sugar churros with chocolate sauce and creamy flan",
     },
   },
 ];
 ---
 
 <section class="bg-stone-100">
-  <div
-    class="mx-auto flex w-full max-w-6xl flex-col items-center justify-center px-4 py-24 sm:px-8"
-  >
-    <span
-      class="inline-block rounded-full bg-amber-400 px-4 py-1 text-sm font-semibold tracking-tight text-amber-950"
-      >Popular dishes</span
-    >
-    <h2
-      class="mt-4 text-center text-3xl font-bold tracking-tight text-stone-900 md:text-4xl"
-    >
-      Our customer's favorites
-    </h2>
-    <p class="mt-2 text-center text-pretty text-stone-500">
-      Discover the most popular dishes in our restaurant
-    </p>
+  <div class="mx-auto max-w-6xl px-4 py-24 sm:px-8">
+    <div class="mx-auto max-w-2xl text-center">
+      <span
+        class="inline-block w-fit rounded-full bg-amber-400 px-4 py-1 text-sm font-semibold tracking-tight text-amber-950"
+        >Customer Favorites</span
+      >
+      <h2
+        class="mt-4 text-3xl font-bold tracking-tight text-balance text-stone-900 md:text-4xl"
+      >
+        Most Popular Mexican Dishes in Barre
+      </h2>
+      <p class="mt-4 text-lg text-pretty text-stone-500">
+        Taste the authentic Mexican flavors that keep our customers coming back
+        for more – from sizzling fajitas to hand-rolled burritos and traditional
+        street tacos.
+      </p>
+    </div>
     <ul class="mt-8 grid w-full grid-cols-1 gap-4 md:grid-cols-2 md:gap-2">
       {
         popularDishes.map((dish) => (
