@@ -34,31 +34,31 @@ export const categories: {
   slug: CollectionKey;
 }[] = [
   {
-    title: "Appetizers",
+    title: "Mexican Appetizers & Starters",
     slug: "appetizers",
   },
   {
-    title: "Burritos",
+    title: "Hand-Rolled Burritos",
     slug: "burritos",
   },
   {
-    title: "Chicken",
+    title: "Grilled Chicken Specialties",
     slug: "chicken",
   },
   {
-    title: "Desserts",
+    title: "Traditional Mexican Desserts",
     slug: "desserts",
   },
   {
-    title: "Enchiladas",
+    title: "Authentic Enchiladas",
     slug: "enchiladas",
   },
   {
-    title: "Fajitas",
+    title: "Sizzling Fajitas",
     slug: "fajitas",
   },
   {
-    title: "House Specialties",
+    title: "Casa Azteca House Specialties",
     slug: "house-specialties",
   },
   {
@@ -66,31 +66,31 @@ export const categories: {
     slug: "kids-menu",
   },
   {
-    title: "Lunch Specials",
+    title: "Daily Lunch Specials",
     slug: "lunch-specials",
   },
   {
-    title: "Nachos",
+    title: "Loaded Nachos",
     slug: "nachos",
   },
   {
-    title: "Quesadillas",
+    title: "Grilled Quesadillas",
     slug: "quesadillas",
   },
   {
-    title: "Salads",
+    title: "Fresh Mexican Salads",
     slug: "salads",
   },
   {
-    title: "Seafood",
+    title: "Fresh Seafood Dishes",
     slug: "seafood",
   },
   {
-    title: "Steak",
+    title: "Premium Steak Entrees",
     slug: "steaks",
   },
   {
-    title: "Tacos",
+    title: "Authentic Street Tacos",
     slug: "tacos",
   },
 ];

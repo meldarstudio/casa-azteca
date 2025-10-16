@@ -2,38 +2,45 @@
   {
     "name": "Chicken fajita",
     "slug": "chicken-fajita",
-    "description": "Tender grilled chicken served sizzling with sautéed bell peppers, onions, and tomatoes. Comes with rice, beans, lettuce, sour cream, shredded cheese, pico de gallo, an extra tomato slice, and your choice of three flour or corn tortillas"
+    "description": "Marinated chicken breast grilled to perfection and served sizzling hot on a cast iron plate with colorful bell peppers, onions, and tomatoes. Accompanied by Mexican rice, refried beans, fresh lettuce, sour cream, shredded cheese, pico de gallo, and your choice of warm flour or corn tortillas",
+    "price": 1699
   },
   {
     "name": "Steak fajita",
     "slug": "steak-fajita",
-    "description": "Tender grilled steak served sizzling with sautéed bell peppers, onions, and tomatoes. Comes with rice, beans, lettuce, sour cream, shredded cheese, pico de gallo, an extra tomato slice, and your choice of three flour or corn tortillas"
+    "description": "Premium marinated steak strips grilled to your preference and served sizzling on a cast iron plate with fresh bell peppers, onions, and tomatoes. Served with Mexican rice, refried beans, lettuce, sour cream, cheese, pico de gallo, and warm tortillas",
+    "price": 1899
   },
   {
     "name": "Mixed fajita",
     "slug": "mixed-fajita",
-    "description": "Tender grilled steak and chicken served sizzling with sautéed bell peppers, onions, and tomatoes. Comes with rice, beans, lettuce, sour cream, shredded cheese, pico de gallo, an extra tomato slice, and your choice of three flour or corn tortillas"
+    "description": "The best of both worlds! Marinated steak and chicken grilled together and served sizzling with colorful bell peppers, onions, and tomatoes. Complete with Mexican rice, refried beans, fresh toppings, and warm tortillas for the perfect combination",
+    "price": 1799
   },
   {
     "name": "Shrimp fajita",
     "slug": "shrimp-fajita",
-    "description": "Tender grilled shrimp served sizzling with sautéed bell peppers, onions, and tomatoes. Comes with rice, beans, lettuce, sour cream, shredded cheese, pico de gallo, an extra tomato slice, and your choice of three flour or corn tortillas"
+    "description": "Plump gulf shrimp seasoned with Mexican spices and grilled to perfection, served sizzling with bell peppers, onions, and tomatoes. Accompanied by rice, beans, fresh toppings, and your choice of tortillas for a coastal Mexican experience",
+    "price": 1999
   },
   {
     "name": "Pork fajita",
     "slug": "pork-fajita",
-    "description": "Tender grilled pork served sizzling with sautéed bell peppers, onions, and tomatoes. Comes with rice, beans, lettuce, sour cream, shredded cheese, pico de gallo, an extra tomato slice, and your choice of three flour or corn tortillas"
+    "description": "Succulent pork tenderloin marinated in traditional Mexican spices and grilled to perfection, served sizzling with fresh vegetables. Complete with all the classic accompaniments and warm tortillas for an authentic fajita experience",
+    "price": 1799
   },
   {
     "name": "Fajita Texana",
     "slug": "fajita-texana",
-    "description": "Tender grilled steak, chicken, and shrimp served sizzling with sautéed bell peppers, onions, and tomatoes. Comes with rice, beans, lettuce, sour cream, shredded cheese, pico de gallo, an extra tomato slice, and your choice of three flour or corn tortillas",
-    "imgSrc": "/src/assets/menu/fajita_texana.webp"
+    "description": "Our signature triple-meat fajita featuring marinated steak, chicken, and gulf shrimp all grilled together and served sizzling with bell peppers, onions, and tomatoes. A feast for sharing with all the traditional accompaniments and fresh tortillas",
+    "imgSrc": "/src/assets/menu/fajita_texana.webp",
+    "price": 2199
   },
   {
     "name": "Fajita Hawaiana",
     "slug": "fajita-hawaiana",
-    "description": "Tender grilled steak, chicken, and shrimp and pineapple served sizzling with sautéed bell peppers, onions, and tomatoes. Comes with rice, beans, lettuce, sour cream, shredded cheese, pico de gallo, an extra tomato slice, and your choice of three flour or corn tortillas",
-    "imgSrc": "/src/assets/menu/fajita_hawaiana.webp"
+    "description": "A tropical twist on our classic fajitas! Marinated steak, chicken, and shrimp grilled with sweet pineapple chunks, bell peppers, onions, and tomatoes. The perfect blend of Mexican tradition with island flavors, served with all the fixings",
+    "imgSrc": "/src/assets/menu/fajita_hawaiana.webp",
+    "price": 2299
   }
 ]

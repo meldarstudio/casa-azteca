@@ -2,31 +2,31 @@
   {
     "name": "Guacamole dip",
     "slug": "guacamole-dip",
-    "description": "Fresh avocado, tomatoes, onions, cilantro, and jalapeños",
+    "description": "House-made daily with ripe avocados, fresh tomatoes, white onions, cilantro, and jalapeños. Served with warm tortilla chips and salsa verde",
     "price": 575
   },
   {
     "name": "Cheese dip",
     "slug": "cheese-dip",
-    "description": "Melted cheese with chorizo (Mexican sausage)",
+    "description": "Creamy white cheese dip melted with spicy chorizo (Mexican sausage) and poblano peppers. Perfect for sharing",
     "price": 575
   },
   {
     "name": "Bean dip",
-    "description": "Refried beans topped with cheese",
+    "description": "Traditional refried pinto beans topped with melted Monterey Jack cheese and fresh pico de gallo",
     "slug": "bean-dip",
     "price": 699
   },
   {
     "name": "Queso fundido",
     "slug": "queso-fundido",
-    "description": "Melted cheese with chorizo (Mexican sausage)",
+    "description": "Authentic Mexican melted cheese with spicy chorizo sausage, served bubbling hot with fresh flour tortillas",
     "price": 825
   },
   {
     "name": "Fiesta fries",
     "slug": "fiesta-fries",
-    "description": "A bed of french fries with bacon and cheese sauce. Topped with your choice of protein and drizzled with sour cream and our homemade chipotle sauce",
+    "description": "Crispy french fries loaded with bacon bits and queso blanco, topped with your choice of grilled protein and drizzled with sour cream and chipotle sauce",
     "price": {
       "chicken": 1175,
       "steak": 1399
@@ -35,7 +35,7 @@
   {
     "name": "Quesadilla casa azteca",
     "slug": "quesadilla-casa-azteca",
-    "description": "Steak, chicken, chorizo (Mexican sausage), or vegetarian, topped with cheese in a grilled flour tortilla. Served with lettuce, pico de gallo, and sour cream",
+    "description": "Large grilled flour tortilla stuffed with cheese and your choice of marinated steak, chicken, chorizo, or fresh vegetables. Served with lettuce, pico de gallo, and sour cream",
     "price": {
       "chicken": 1275,
       "steak": 1425,
@@ -46,26 +46,26 @@
   {
     "name": "Appetizer casa azteca",
     "slug": "appetizer-casa-azteca",
-    "description": "Samples of taquitos, tostadas, jalapeño poppers, and cheese quesadilla on a bed of lettuce. Served with sour cream and tomatoes",
+    "description": "Perfect for sharing! Crispy taquitos, mini tostadas, jalapeño poppers, and cheese quesadilla on fresh lettuce. Served with sour cream and diced tomatoes",
     "price": 1325
   },
   {
     "name": "Jalapeño poppers",
     "slug": "jalapeno-poppers",
-    "description": "Six jalapeño stuffed with cheddar cheese. Served on a bed of lettuce with sour cream and tomatoes on top",
+    "description": "Six fresh jalapeños stuffed with creamy cheddar cheese, lightly battered and fried golden. Served on lettuce with sour cream and tomatoes",
     "price": 875
   },
   {
     "name": "Wings",
     "slug": "wings",
-    "description": "Ten wings tossed in your sauce of choice: plain, BBQ, buffalo, or mango habanero. Served with celery, blue cheese or ranch dressing",
+    "description": "Ten crispy chicken wings tossed in your choice of sauce: classic buffalo, tangy BBQ, or spicy mango habanero. Served with celery sticks and cool ranch or blue cheese dressing",
     "imgSrc": "/src/assets/menu/chicken_wings.webp",
     "price": 1499
   },
   {
     "name": "Street corn",
     "slug": "street-corn",
-    "description": "Grilled sweet corn on the cob. Topped with our homemade chipotle sauce, mayo, parmesan cheese, and tajin",
+    "description": "Grilled sweet corn on the cob, Mexican street style. Slathered with chipotle mayo, cotija cheese, chili powder, and lime juice",
     "price": 900
   }
 ]

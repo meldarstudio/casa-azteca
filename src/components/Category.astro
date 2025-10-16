@@ -9,10 +9,51 @@ interface Props {
 
 const { slug, title } = Astro.props;
 const collection = await getCollection(slug);
+
+// Category descriptions for SEO and context
+const categoryDescriptions: Record<string, string> = {
+  appetizers:
+    "Start your Mexican feast with our authentic appetizers, from fresh guacamole to loaded nachos.",
+  tacos:
+    "Authentic street tacos made with fresh corn tortillas and traditional fillings, served Mexico City style.",
+  burritos:
+    "Oversized burritos packed with your favorite fillings, rice, beans, and fresh toppings.",
+  fajitas:
+    "Sizzling hot fajitas served on cast iron plates with warm tortillas and all the fixings.",
+  enchiladas:
+    "Traditional enchiladas smothered in our house-made sauces and melted cheese.",
+  quesadillas:
+    "Grilled flour tortillas stuffed with cheese and your choice of premium fillings.",
+  nachos: "Mountain-high nachos loaded with cheese, meat, and fresh toppings.",
+  salads:
+    "Fresh Mexican-inspired salads with crisp vegetables and zesty dressings.",
+  chicken:
+    "Tender chicken dishes prepared with authentic Mexican seasonings and sauces.",
+  steaks:
+    "Premium cuts of steak grilled to perfection with Mexican spices and accompaniments.",
+  seafood:
+    "Fresh seafood prepared with traditional Mexican flavors and coastal ingredients.",
+  "house-specialties":
+    "Signature dishes that showcase the best of Casa Azteca's culinary tradition.",
+  desserts: "Traditional Mexican desserts to sweeten the end of your meal.",
+  "kids-menu":
+    "Kid-friendly Mexican favorites in perfect portions for little ones.",
+  "lunch-specials":
+    "Daily lunch combinations offering great value and authentic flavors.",
+};
 ---
 
 <section id={slug}>
-  <h2 class="mb-4 text-2xl font-bold" id={slug}>{title}</h2>
+  <div class="mb-6">
+    <h2 class="mb-2 text-2xl font-bold" id={slug}>{title}</h2>
+    {
+      categoryDescriptions[slug] && (
+        <p class="leading-relaxed text-stone-600">
+          {categoryDescriptions[slug]}
+        </p>
+      )
+    }
+  </div>
   <ul class="grid grid-cols-1 gap-4">
     {
       collection.map(({ data }) => (
