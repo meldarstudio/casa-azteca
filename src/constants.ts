@@ -25,7 +25,7 @@ export const navLinks = [
   },
   {
     name: "Menu",
-    href: "/menu",
+    href: "/menu/",
   },
 ];
 
