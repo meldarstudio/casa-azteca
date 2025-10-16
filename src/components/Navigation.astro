@@ -3,12 +3,14 @@ import { navLinks, orderUrl } from "~/constants";
 ---
 
 <header
-  class="sticky-animation fixed top-0 z-20 w-full px-4 py-6 text-white xl:px-0"
+  class="sticky-animation fixed top-0 z-20 w-full text-white"
   class:list={{
     "relative bg-stone-950": Astro.url.pathname !== "/",
   }}
 >
-  <div class="mx-auto flex max-w-6xl items-center justify-between">
+  <div
+    class="mx-auto flex max-w-6xl items-center justify-between px-4 py-6 sm:px-8"
+  >
     <a href="/" class="flex flex-col items-center"
       ><span class="font-serif text-2xl sm:text-7xl">Casa Azteca</span>
       <span
@@ -17,18 +19,10 @@ import { navLinks, orderUrl } from "~/constants";
       ></a
     >
     <nav
-      class="flex flex-col items-end gap-1 text-sm tracking-wide uppercase sm:gap-0.5 sm:text-base"
+      class="flex flex-col items-end gap-1 text-sm font-medium tracking-wide uppercase sm:gap-0.5 sm:text-base"
     >
-      {
-        navLinks.map((link) => (
-          <a href={link.href} class="hover:underline">
-            {link.name}
-          </a>
-        ))
-      }
-      <a href={orderUrl} class="rounded-md bg-red-700 px-1 hover:underline"
-        >Order Now</a
-      >
+      {navLinks.map((link) => <a href={link.href}>{link.name}</a>)}
+      <a href={orderUrl} class="rounded bg-red-700 px-1">Order Now</a>
     </nav>
   </div>
 </header>

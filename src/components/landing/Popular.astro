@@ -1,8 +1,9 @@
 ---
-import burritos from "~/assets/popular/burritos.webp";
-import tacos from "~/assets/popular/tacos.webp";
-import fajitas from "~/assets/popular/fajitas.webp";
-import { Picture } from "astro:assets";
+import burritos from "~/assets/menu/burritos.webp";
+import tacos from "~/assets/menu/tacos_de_birria.webp";
+import fajitas from "~/assets/menu/fajita_texana.webp";
+import desserts from "~/assets/menu/combo_dessert.webp";
+import { Image } from "astro:assets";
 
 const popularDishes = [
   {
@@ -35,33 +36,41 @@ const popularDishes = [
       alt: "One burrito in a plate",
     },
   },
+  {
+    title: "Desserts",
+    href: "/menu#desserts",
+    description:
+      "Churros and flan to satisfy your sweet tooth after a delicious meal",
+    img: {
+      src: desserts,
+      alt: "Churros with chocolate sauce and a flan in a plate",
+    },
+  },
 ];
 ---
 
-<section class="bg-stone-950 px-4 py-12 md:py-20">
+<section class="bg-stone-100">
   <div
-    class="mx-auto flex w-full max-w-6xl flex-col items-center justify-center"
+    class="mx-auto flex w-full max-w-6xl flex-col items-center justify-center px-4 py-24 sm:px-8"
   >
     <span
-      class="inline-block rounded-full bg-amber-400 px-3 py-1 text-center text-sm font-semibold tracking-tight text-amber-950"
+      class="inline-block rounded-full bg-amber-400 px-4 py-1 text-sm font-semibold tracking-tight text-amber-950"
       >Popular dishes</span
     >
     <h2
-      class="mt-2 text-center text-3xl font-bold tracking-tighter text-pretty text-white md:text-4xl"
+      class="mt-4 text-center text-3xl font-bold tracking-tight text-stone-900 md:text-4xl"
     >
       Our customer's favorites
     </h2>
-    <p class="mt-2 max-w-prose text-center text-pretty text-stone-300">
+    <p class="mt-2 text-center text-pretty text-stone-500">
       Discover the most popular dishes in our restaurant
     </p>
-    <ul
-      class="mt-6 grid w-full grid-cols-1 gap-4 sm:grid-cols-2 md:mt-8 lg:grid-cols-3"
-    >
+    <ul class="mt-8 grid w-full grid-cols-1 gap-4 md:grid-cols-2 md:gap-2">
       {
         popularDishes.map((dish) => (
-          <li class="relative overflow-hidden rounded-md ring-4 ring-transparent hover:ring-amber-400">
+          <li class="relative overflow-hidden rounded-md transition-colors">
             <a
-              class="absolute inset-0 bg-gradient-to-b from-transparent to-stone-900 opacity-0 transition-all hover:opacity-100"
+              class="absolute inset-0 bg-gradient-to-b from-transparent to-stone-900/50 opacity-0 transition-all hover:opacity-100"
               href={dish.href}
             >
               <span class="absolute top-2 left-2 rounded-md bg-amber-400 px-2 py-1 text-sm font-medium">
@@ -71,14 +80,11 @@ const popularDishes = [
                 {dish.description}
               </p>
             </a>
-            <Picture
-              class="h-full w-full"
+            <Image
               src={dish.img.src}
-              formats={["webp", "avif"]}
-              height={dish.img.src.height / 3}
-              width={dish.img.src.width / 3}
-              loading="lazy"
               alt={dish.img.alt}
+              layout="constrained"
+              sizes="(max-width: 768px) 100vw, (max-width: 1152px) 50vw, 576px"
             />
           </li>
         ))

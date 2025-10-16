@@ -4,14 +4,17 @@ import { Image } from "astro:assets";
 import logoImg from "~/assets/logo.webp";
 ---
 
-<footer class="bg-zinc-950 px-4 pt-12">
-  <div class="mx-auto grid max-w-6xl grid-cols-1 gap-6 md:grid-cols-4">
+<footer class="bg-zinc-950">
+  <div
+    class="mx-auto grid max-w-6xl grid-cols-1 gap-6 px-4 py-12 sm:px-8 md:grid-cols-4"
+  >
     <Image
-      class="mx-auto h-auto w-36"
+      class="mx-auto size-36 md:mx-0 md:mr-auto"
       src={logoImg}
-      format="webp"
-      loading="lazy"
       alt="Restaurant logo"
+      layout="fixed"
+      height={144}
+      width={144}
     />
     <div>
       <h2 class="font-semibold text-amber-400">Links</h2>
@@ -41,21 +44,35 @@ import logoImg from "~/assets/logo.webp";
         }
       </ul>
     </div>
-    <address class="text-zinc-300 not-italic">
-      <h2 class="mb-3 font-semibold text-amber-400">Address</h2>
-      1450 Barre-Montpelier Rd<br />
-      Barre, VT 05641<br />
-      <h2 class="mt-6 mb-3 font-semibold text-amber-400">Phone</h2>
-      +1 (802) 505-4064<br />
-      <h2 class="mt-6 mb-3 font-semibold text-amber-400">Opening hours</h2>
-      Sun - Thur: 11am - 9:30pm<br />
-      Fri - Sat: 11am - 10pm<br />
+    <address class="text-neutral-400 not-italic">
+      <h3 class="mb-3 font-semibold text-amber-400">Address</h3>
+      <a
+        href="https://maps.app.goo.gl/KTEtRcKLEmQu9bcf7"
+        target="_blank"
+        class="underline-offset-2 hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400/90"
+        aria-label="View El Dorado restaurant location on Google Maps"
+      >
+        1450 Barre-Montpelier Rd<br /> Barre, VT 05641
+      </a><br />
+      <h3 class="mt-6 mb-3 font-semibold text-amber-400">Phone</h3>
+      <a
+        href="tel:+18025054064"
+        class="underline-offset-2 hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400/90"
+        aria-label="Call El Dorado restaurant"
+      >
+        (802) 505-4064</a
+      ><br />
+      <h3 class="mt-6 mb-3 font-semibold text-amber-400">Opening Hours</h3>
+      <div role="table" aria-label="Restaurant opening hours">
+        <div role="row">
+          <span role="cell">Sunday - Thursday:</span>
+          <span role="cell">11:00 AM - 9:30 PM</span>
+        </div>
+        <div role="row">
+          <span role="cell">Friday - Saturday:</span>
+          <span role="cell">11:00 AM - 10:30 PM</span>
+        </div>
+      </div>
     </address>
   </div>
-  <p class="mx-auto max-w-6xl py-6 text-xs text-zinc-300">
-    Website built by <a
-      class="underline underline-offset-2 hover:text-amber-400"
-      href="https://www.kevinzunigacuellar.com/">@kevinzunigacuellar</a
-    >
-  </p>
 </footer>

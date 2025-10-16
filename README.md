@@ -1,11 +1,17 @@
 # Casa Azteca Mexican Restaurant Website
 
-This is the source code for the Casa Azteca Mexican Restaurant website.
+This repository contains the source code for the restaurant's website.
 
-[![Built with Astro](https://astro.badg.es/v2/built-with-astro/small.svg)](https://astro.build)
+## Getting Started
 
-Created by [Kevin](https://www.kevinzc.com/)
+Install the dependencies:
 
-## Credits
+```sh
+pnpm install
+```
 
-- Design: [BlurSoul](https://www.behance.net/BlurSoul_)
+Run the development server:
+
+```sh
+pnpm dev
+```

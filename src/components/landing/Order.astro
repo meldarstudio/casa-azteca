@@ -2,20 +2,20 @@
 import { orderUrl, socialLinks } from "~/constants";
 ---
 
-<section class="bg-white px-4 py-12 md:py-20 xl:px-0">
+<section class="bg-white">
   <div
-    class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 sm:flex-row"
+    class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 px-4 py-24 sm:px-8 md:flex-row"
   >
-    <div>
-      <h2 class="text-3xl font-bold tracking-tighter md:text-4xl">
+    <div class="w-full md:max-w-lg">
+      <h2 class="text-3xl font-bold tracking-tight md:text-4xl">
         Order online
       </h2>
-      <p class="m mt-3 max-w-prose text-stone-500 sm:mt-2">
+      <p class="mt-4 leading-relaxed text-stone-500 sm:mt-2">
         Order online for pickup or delivery through our partners at FoodBooking
         and DoorDash.
       </p>
     </div>
-    <div class="flex w-full flex-col gap-4 sm:w-72">
+    <div class="flex w-full flex-col gap-4 md:max-w-xs">
       <a
         href={orderUrl}
         class="rounded-md border border-transparent bg-red-700 px-6 py-3 text-center font-medium text-white transition-colors hover:bg-red-600"
