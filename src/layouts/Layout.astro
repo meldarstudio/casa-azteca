@@ -7,10 +7,16 @@ import Footer from "~/components/Footer.astro";
 interface Props {
   title?: string;
   description?: string;
+  noCanonical?: boolean;
+  noIndex?: boolean;
 }
 
-const { title = defaultMeta.title, description = defaultMeta.description } =
-  Astro.props;
+const {
+  title = defaultMeta.title,
+  description = defaultMeta.description,
+  noCanonical = false,
+  noIndex = false,
+} = Astro.props;
 
 const ogImageURL = new URL(defaultMeta.ogImagePath, Astro.url.origin).href;
 ---
@@ -22,13 +28,11 @@ const ogImageURL = new URL(defaultMeta.ogImagePath, Astro.url.origin).href;
 >
   <head>
     <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="viewport" content="width=device-width" />
     <title>{title}</title>
-    <meta name="generator" content={Astro.generator} />
+    {!noCanonical && <link rel="canonical" href={Astro.url} />}
     <meta name="description" content={description} />
-    <link rel="canonical" href={Astro.url} />
-    <link rel="icon" type="image/png" href="/favicon.png" />
-    <link rel="sitemap" href="/sitemap-index.xml" />
     <meta property="og:title" content={title} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={Astro.url} />
@@ -45,6 +49,24 @@ const ogImageURL = new URL(defaultMeta.ogImagePath, Astro.url.origin).href;
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImageURL} />
     <meta name="twitter:image:alt" content="alt_description" />
+    <meta name="generator" content={Astro.generator} />
+    {
+      noIndex ? (
+        <Fragment>
+          <meta name="robots" content="noindex, nofollow" />
+          <meta name="googlebot" content="noindex, nofollow" />
+        </Fragment>
+      ) : (
+        <Fragment>
+          <meta name="robots" content="follow, index" />
+          <link rel="sitemap" href="/sitemap-index.xml" />
+          <meta
+            name="googlebot"
+            content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+          />
+        </Fragment>
+      )
+    }
   </head>
   <body class="relative h-full w-full bg-stone-100 antialiased">
     <a

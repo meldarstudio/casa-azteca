@@ -1,0 +1,47 @@
+---
+import Layout from "~/layouts/Layout.astro";
+---
+
+<Layout
+  title="Page Not Found | Casa Azteca Mexican Restaurant"
+  description="The page you're looking for doesn't exist. Return to Casa Azteca's homepage for authentic Mexican cuisine in Barre, Vermont."
+  noCanonical
+  noIndex
+>
+  <div
+    class="flex min-h-[calc(100vh-116px)] items-center justify-center bg-stone-100 px-4 py-24 sm:min-h-[calc(100vh-144px)] sm:px-8"
+  >
+    <div class="mx-auto max-w-2xl text-center">
+      <span
+        class="inline-block w-fit rounded-full bg-amber-400 px-4 py-1 text-sm font-semibold tracking-tight text-amber-950"
+      >
+        Error 404
+      </span>
+
+      <h1
+        class="mt-4 font-serif text-6xl font-bold tracking-tight text-stone-900"
+      >
+        Oops! Page Not Found
+      </h1>
+
+      <p class="mt-8 text-xl leading-relaxed text-pretty text-stone-600">
+        The page you're looking for seems to have disappeared faster than our
+        famous guacamole at a family gathering.
+      </p>
+      <div class="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
+        <a
+          href="/"
+          class="rounded-md bg-amber-700 px-6 py-3 text-base font-semibold text-white transition-colors hover:bg-amber-600 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:outline-none"
+        >
+          Return to Casa Azteca
+        </a>
+        <a
+          href="/menu"
+          class="rounded-md border border-stone-300 bg-white px-6 py-3 text-base font-medium text-stone-700 transition-colors hover:bg-stone-50 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:outline-none"
+        >
+          Browse Our Menu
+        </a>
+      </div>
+    </div>
+  </div>
+</Layout>
